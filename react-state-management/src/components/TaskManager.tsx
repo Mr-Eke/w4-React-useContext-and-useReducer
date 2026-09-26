@@ -30,7 +30,12 @@ const TaskManager = () => {
         {tasks.map((t) => (
           <li key={t.id} className={styles.item}>
             {t.text}
-            <button onClick={() => dispatch({ type: "remove", payload: t.id })}>X</button>
+            <button
+              aria-label={`Remove ${t.text}`}
+              onClick={() => dispatch({ type: "remove", payload: t.id })}
+            >
+              X
+            </button>
           </li>
         ))}
       </ul>
