@@ -1,7 +1,6 @@
 import { useReducer, useState, type FormEvent } from "react";
 import { taskReducer } from "../reducers/taskReducer";
 import { useTheme } from "../context/ThemeContext";
-import { LIGHT_THEME } from "../constants/theme";
 import styles from "./TaskManager.module.css";
 
 const TaskManager = () => {
@@ -16,7 +15,7 @@ const TaskManager = () => {
   };
 
   return (
-    <div className={`${styles.container} ${theme === LIGHT_THEME ? styles.light : styles.dark}`}>
+    <div className={`${styles.container} ${styles[theme]}`}>
       <h2>Task Manager</h2>
       <form onSubmit={addTask}>
         <input
