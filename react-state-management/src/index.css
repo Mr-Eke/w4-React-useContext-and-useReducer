@@ -1,3 +1,12 @@
+:root {
+  --light-bg: #ffffff;
+  --light-text: #000000;
+  --light-button: #1e90ff;
+  --dark-bg: #242629;
+  --dark-text: #ffffff;
+  --dark-button: #85d1b0;
+}
+
 *,
 *::before,
 *::after {

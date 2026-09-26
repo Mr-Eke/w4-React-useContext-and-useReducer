@@ -4,11 +4,11 @@
 }
 
 .light {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: var(--light-bg);
+  color: var(--light-text);
 }
 
 .dark {
-  background-color: #242629;
-  color: #ffffff;
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
 }

@@ -20,21 +20,21 @@
 }
 
 .light {
-  background-color: #1e90ff;
-  color: #ffffff;
+  background-color: var(--light-button);
+  color: var(--light-bg);
 }
 
 .light .toggleButton {
-  background-color: #ffffff;
-  color: #1e90ff;
+  background-color: var(--light-bg);
+  color: var(--light-button);
 }
 
 .dark {
-  background-color: #85d1b0;
-  color: #242629;
+  background-color: var(--dark-button);
+  color: var(--dark-bg);
 }
 
 .dark .toggleButton {
-  background-color: #242629;
-  color: #85d1b0;
+  background-color: var(--dark-bg);
+  color: var(--dark-button);
 }
