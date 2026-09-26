@@ -11,7 +11,7 @@ const TaskManager = () => {
 
   const addTask = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    dispatch({ type: "add", payload: task.trim() });
+    dispatch({ type: "add", payload: { id: crypto.randomUUID(), text: task.trim() } });
     setTask("");
   };
 
