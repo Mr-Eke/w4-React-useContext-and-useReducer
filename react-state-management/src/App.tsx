@@ -1,5 +1,18 @@
-function App() {
-  return <h1>React State Management</h1>
-}
+import { ThemeProvider } from "./context/ThemeContext";
+import Layout from "./components/Layout";
+import Navbar from "./components/Navbar";
+import TaskManager from "./components/TaskManager";
+import styles from "./App.module.css";
 
-export default App
+const App = () => (
+  <ThemeProvider>
+    <Layout>
+      <Navbar />
+      <main className={styles.content}>
+        <TaskManager />
+      </main>
+    </Layout>
+  </ThemeProvider>
+);
+
+export default App;
